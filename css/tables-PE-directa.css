@@ -1,0 +1,470 @@
+/* CSS Tablas */
+
+#table {
+		display: table;
+	 	
+	 	width: 100%; 
+	 	background: #fff;
+	 	margin: 0;
+	 	box-sizing: border-box;
+		
+
+	 }
+
+	 
+	 
+	 
+
+	 .header-row {
+	 	background: #666666;
+	 	color: #fff;
+
+	 }
+
+	.row {
+		display: table-row;
+	}
+
+	.cell {
+		display: table-cell;
+		
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+	}
+	
+	.cell_clave {
+		display: table-cell;
+		font-weight:300;
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+		width:10%;
+		
+	}
+	
+	.cell_especialidad {
+		display: table-cell;
+		font-weight:300;
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+		width:50%;
+	}
+	
+	.cell_anios-req {
+		display: table-cell;
+		font-weight:300;
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+		width:20%;
+	}
+	
+	
+	
+	.cell_anios-curso {
+		display: table-cell;
+		font-weight:300;
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+		width:10%;
+		
+	}
+	
+	.cell_anios-total {
+		display: table-cell;
+		font-weight:300;
+		padding: 6px; 
+		border-bottom: 1px solid #e5e5e5;
+		text-align: left;
+		width:10%;
+		
+	}
+	
+	.
+
+	.primary {
+		text-align: left;
+	}
+
+
+	input[type="radio"],
+	input[type="checkbox"]{
+		display: none;
+	}
+
+
+	@media only screen and (max-width: 970px)  {
+
+		body {
+			padding: 0;
+		}
+
+		#table {
+			display: block;
+			margin: 44px 0 0 0;
+		}
+
+		
+		.row { 
+			position: relative;
+			display: block;
+			border-bottom: 1px solid #ccc; 
+
+		}
+
+		.header-row {
+			display: none;
+		}
+		
+		.cell { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+		}
+		
+		
+		.cell_clave { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+			width:100%;
+		}
+		
+		.cell_especialidad { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+			width:100%;
+		}
+		
+		.cell_anios-req { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+			width:100%;
+		}
+		
+		
+		
+		.cell_anios-curso { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+			width:100%;
+		}
+		
+		.cell_anios-total { 
+			display: block;
+
+			border: none;
+			position: relative;
+			height: 100%;
+			line-height: 1.6;
+			text-align: left;
+			width:100%;
+		}
+		
+		
+		
+		
+
+		.primary:after {
+			content: "";
+			display: block;
+			position: absolute;
+			right:20px;
+			top:9px;
+			z-index: 2;
+			width: 0; 
+			height: 0; 
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent; 
+			border-right:10px solid #ccc;
+
+		}
+
+		.cell:nth-of-type(n+2) { 
+			display: none; 
+		}
+		
+		.cell_clave:nth-of-type(n+2) { 
+			display: none; 
+		}
+		
+		.cell_especialidad:nth-of-type(n+2) { 
+			display: none; 
+		}
+		
+		.cell_anios-req:nth-of-type(n+2) { 
+			display: none; 
+		}
+		
+		
+		
+		.cell_anios-curso:nth-of-type(n+2) { 
+			display: none; 
+		}
+		.cell_anios-total:nth-of-type(n+2) { 
+			display: none; 
+		}
+		
+		
+		
+
+
+		input[type="radio"],
+		input[type="checkbox"] {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 99%;
+	height: 100%;
+	opacity: 0;
+	top: 2px;
+		}
+
+		input[type="radio"]:checked ~ .cell,
+		input[type="checkbox"]:checked ~ .cell {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		input[type="radio"]:checked ~ .cell_clave,
+		input[type="checkbox"]:checked ~ .cell_clave {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		input[type="radio"]:checked ~ .cell_especialidad,
+		input[type="checkbox"]:checked ~ .cell_especialidad {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		
+		input[type="radio"]:checked ~ .cell_anios-req,
+		input[type="checkbox"]:checked ~ .cell_anios-req {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		
+		
+		
+		input[type="radio"]:checked ~ .cell_anios-curso,
+		input[type="checkbox"]:checked ~ .cell_anios-curso {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-total,
+		input[type="checkbox"]:checked ~ .cell_anios-total {
+			display: block;
+
+			border-bottom: 1px solid #eee; 
+		}
+		
+		
+
+		input[type="radio"]:checked ~ .cell:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		
+		input[type="radio"]:checked ~ .cell_clave:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_clave:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		input[type="radio"]:checked ~ .cell_especialidad:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_especialidad:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-req:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_anios-req:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		input[type="radio"]:checked ~ .cell_troncal:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_troncal:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-curso:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_anios-curso:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-total:nth-of-type(n+2),
+		input[type="checkbox"]:checked ~ .cell_anios-total:nth-of-type(n+2) {
+			
+			background: #e0e0e0;
+		}
+		
+		
+		
+		
+
+		input[type="radio"]:checked ~ .cell:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		input[type="radio"]:checked ~ .cell_clave:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell_clave:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		input[type="radio"]:checked ~ .cell_especialidad:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell_especialidad:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-req:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell_anios-req:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		
+		
+		input[type="radio"]:checked ~ .cell_anios-curso:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell_anios-curso:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		input[type="radio"]:checked ~ .cell_anios-total:nth-of-type(n+2):before,
+		input[type="checkbox"]:checked ~ .cell_anios-total:nth-of-type(n+2):before {
+			content: attr(data-label);
+
+			display: inline-block;
+			width: 100px;
+			background: #999;
+			border-radius: 10px;
+			height: 20px;
+			margin-right: 10px;
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		
+		
+		
+		
+		
+		
+
+		input[type="radio"]:checked ~ .primary,
+		input[type="checkbox"]:checked ~ .primary  {
+			border-bottom: 2px solid #999;
+		}
+
+		input[type="radio"]:checked ~ .primary:after,
+		input[type="checkbox"]:checked ~ .primary:after {
+	 		position: absolute;
+			right:18px;
+			top:18px;
+			border-right: 10px solid transparent;
+			border-left: 10px solid transparent; 
+			border-top:10px solid #ccc;
+			z-index: 2;
+		}
+	}

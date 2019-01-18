@@ -1,0 +1,129 @@
+
+
+#team {
+    padding-top: 100px;
+    /*background:rgba(247,179,0,1.0);*/
+	background:#EDEDED;
+}
+
+#team p {
+	color:rgba(255,255,255,0.8);
+	font-size:17px;
+	line-height:23px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+
+#team a {
+	color:rgba(255,255,255,0.60);
+}
+
+
+
+.team_list img
+	{
+		width:100%;
+	}
+	
+
+
+.team_list,
+	.clients_list,
+	.blog-masonry,
+	.portfolio-masonry,
+	.service_list {
+		overflow:hidden;
+		display:block;
+		margin:50px 0 30px;
+	}
+	
+	
+.team_member {
+		text-align:center;
+	}
+	.team_member h3 {
+		padding-bottom:5px;
+		color:rgba(255,255,255,1.00);
+		font-size:21px;
+	}
+	.team_member small {
+		font-size:14px !important;
+	}
+	.contact_details {
+		margin-left:0;
+	}
+	.contact_details li {
+		margin-bottom:18px;
+		list-style:none;
+	}
+	.contact_details li span{
+		padding-left:10px;
+	}
+	.contact_details li i {
+		color: #FFFFFF;
+		font-size: 28px;
+		padding-right: 10px;
+		text-align: center;
+		vertical-align: top;
+		width: 35px;
+	}	
+	
+	
+	
+	#custom .navbar-toggle,
+#custom .navbar-toggle:hover,
+	.single_item .magnifier,
+	.related_items .item .magnifier,
+	.fullwidth .item .magnifier,
+	.blog-item .hovereffect,
+	.team_member .magnifier {
+		background-color:rgba(38,205, 164, 0.8) !important;
+	}
+	
+	
+.practice-box {
+   /* border: 1px solid #E5E5E5;*/
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+	background:#666666;
+}
+
+.practice-box-EC {
+    /*border: 1px solid #43a886;*/
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+	background:#43a886;
+}
+
+.practice-box-PE {
+    /*border: 1px solid #0090b9;*/
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+	background:#0090b9;
+}
+
+.practice-box-IE {
+    /*border: 1px solid #734e97;*/
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+    position: relative;
+	background:#734e97;
+	
+}
+
+.entry {
+		display:block;
+		position:relative;	
+	}

@@ -1,0 +1,213 @@
+/* 
+    Created on : 9/11/2016, 10:38:04 AM
+    Author     : Dpérez
+*/
+/* Ocultndo el formulario de fechas original*/
+#views-exposed-form-noticias-page{
+    display: none;
+}
+
+h3.noticia-home-titulo{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 27px;
+    font-family: 'Martel', serif;
+    font-weight: 600;
+    line-height: 35px;
+}
+.noticia-home-fecha > span{
+    font-size: 15px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 25px;
+    line-height: 27px;
+}
+
+p.noticas-home-abstract{
+    font-size: 19px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 25px;
+    line-height: 27px;
+    margin-top: 25px;
+}
+.content-img-responsive{
+    overflow: hidden;
+}
+.noticias-home-img a img, .content-img-responsive a img{
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.content-img-responsive a img:hover{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    opacity: 1;
+}
+.em08{
+    font-size: 0.7em;
+}
+.noticias-list-title{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.noticias-list-fecha span{
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 25px;
+    line-height: 27px;
+    font-size: 85%;
+}
+.media-body {
+    width: auto !important;
+}
+.field-name-field-news-img img{
+    width: 100%;
+}
+.field-name-field-news-lead{
+    font-size: 38px;
+    letter-spacing: -1px;
+    font-family: 'Martel', serif;
+    font-weight: 700;   
+    line-height: 48px;
+    margin: 25px auto 0px;
+}
+.field-name-field-news-date{
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 25px;
+    line-height: 27px;
+    font-size: 16px;
+}
+.field-name-field-news-abstract{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 35px;
+    font-family: 'Martel', serif; 
+}
+.field-name-body{
+    font-family: 'Martel', serif;
+}
+.division-noticia-destacada{
+    padding: 15px 15px 25px;
+    margin-bottom: 15px;
+    margin: 0 10px;
+    background-color: gray;
+    color:white;
+}
+.division-noticia-destacada.innovacion{
+    background-color: #734e97;
+}
+.division-noticia-destacada.educacion{
+    background: #43a886;
+}
+.division-noticia-destacada.programas{
+    background: #0090b9;
+}
+.tr-center-content{
+    vertical-align: super;
+}
+.notica-division-lead{
+    margin-top: 20px;
+}
+.notica-division-lead a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 21px;
+}
+.noticia-division-fecha{
+    margin-bottom: 25px;
+}
+.noticia-division-fecha span{
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 27px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.50);
+}
+.noticia-division-resumen{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 15px;
+}
+.row.n-title {
+    margin-bottom: 10px;
+    background-color: #e5e5e5;
+}
+.row.n-title h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-fluid.n-divisiones{
+    background-color: #EDEDED;
+    padding-bottom: 20px;
+}
+span.noticia-division-leer-mas a{
+    font-size: 14px;
+    color: rgba(255,255,255,0.50);
+}
+.views-field-field-news-abstract{
+    margin-bottom: 10px;
+}
+.media-left.mini{
+    width: 74px !important;
+    padding-top: 2px;
+}
+.table-sm{
+    display:table; 
+    border-spacing: 25px;
+}
+.table-row-sm{
+    display: table-row;
+}
+.table-cell-sm{
+    display:table-cell; 
+    vertical-align: top;
+    width: 33%;
+}
+/*@media (max-width: 768px) {*/
+@media (max-width: 1195px) {
+    .table-sm{
+        display:table; 
+        border-spacing: 20px;
+    }
+    .table-row-sm{
+        display: table-row-group;
+    }
+    .table-cell-sm{
+        display:table-row; 
+        
+    }  
+    .table-cell-xs{
+        display: table-cell;
+        vertical-align: top;
+        padding: 10px;
+    }
+}
+
+
+/*Carrusel corrección responsiva*/
+.rs-carousel .rs-carousel-runner{
+    display: flex;
+    flex-direction: column;
+}
+.rs-carousel-vertical > .rs-carousel-mask > .rs-carousel-runner > .rs-carousel-item{
+    height: auto;
+    margin-bottom: 3px;
+}
+/*div.rs-carousel-mask > ul > li > div > div > a > img {
+    width: 100%;
+    height: auto;
+}*/
